@@ -9,9 +9,13 @@
     --seccondary: #f0f0f0;
     --text-primary: #101010;
     --text-inverse: #F9F8F8;
+    --border: #101010;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: var(--seccondary);
     font-family: Arial, Helvetica, sans-serif;
     padding: 0 48px;
@@ -20,6 +24,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .navbar {
@@ -91,3 +96,21 @@ letter-spacing: -2.4px;
 .content-container {
  width: 648px;
 }
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 24px 0;
+}
+
+footer p {
+    font-family: DotGothic16;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 22px;
+    border: 1px solid var(--border)
+}
+
