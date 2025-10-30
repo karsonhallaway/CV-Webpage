@@ -4,7 +4,38 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: whitesmoke;
-    font-family: Arial, Helvetica, sans-serif;
+:root {
+    --primary: #5F50FF; 
+    --seccondary: #f0f0f0;
+    --text-primary: #101010;
+    --text-inverse: #F9F8F8;
 }
+
+body {
+    background-color: var(--seccondary);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 48px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+b {
+    font-family: dotGothic16;
+    font-size: 24px;
+}
+
+.navbar-links, a {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+    font-family: dotGothic16;
+    color: var(--text-primary);
+}
+
