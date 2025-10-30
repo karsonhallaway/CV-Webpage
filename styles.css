@@ -17,11 +17,19 @@ body {
     padding: 0 48px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 0;
+}
+
+section {
+    padding: 48px 0;
 }
 
 b {
@@ -39,3 +47,38 @@ b {
     color: var(--text-primary);
 }
 
+.avatar {
+    width: 200px;
+    border-radius: 100px;
+}
+
+h1 {
+color: var(--text-primary);
+font-family: DotGothic16;
+font-size: 120px;
+font-style: normal;
+font-weight: 400;
+line-height: 120px; /* 100% */
+letter-spacing: -2.4px;
+}
+
+h2 {
+color: var(--text-primary);
+text-align: center;
+font-family: DotGothic16;
+font-size: 120px;
+font-style: normal;
+font-weight: 400;
+line-height: 120px; /* 100% */
+letter-spacing: -2.4px;
+}
+
+.p-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.p2 {
+    padding: 0 0 0 56px;
+}
