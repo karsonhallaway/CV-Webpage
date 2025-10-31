@@ -58,6 +58,10 @@ b {
     border-radius: 100px;
 }
 
+section {
+    padding: 48px 0;
+}
+
 h1 {
 color: var(--text-primary);
 font-family: DotGothic16;
