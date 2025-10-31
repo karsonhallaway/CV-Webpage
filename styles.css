@@ -21,11 +21,50 @@ body {
     padding: 0 48px;
 }
 
+main::after {
+    content: "Default View";
+    display: block;
+    text-align: center;
+    padding: 50px 0;
+    color: black; 
+}
+/* Mobile View */
+@media only screen and (max-width: 599px) {
+    body {
+        background-color: greenyellow;
+    }
+    main::after {
+        content: "Mobile View";
+        color: var(--text-primary);
+    }
+}
+
+/* Tablet View */
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+    body {
+        background-color: var(--primary);
+    }
+    main::after {
+        content: "Tablet View";
+        color: var(--text-inverse)
+    }
+}
+
+/* Desktop View */
+@media only screen and (min-width: 900px) {
+    body {
+        background-color: var(--seccondary);
+    }
+    main::after {
+        content: "Desktop View";
+    }
+}
+
 main {
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
     flex: 1;
-    width: 90%;
+    margin: 32px 0 0 0;
 }
 
 .navbar {
@@ -62,6 +101,10 @@ section {
     padding: 48px 0;
 }
 
+.hero-container {
+    max-width: 1344px;
+}
+
 h1 {
 color: var(--text-primary);
 font-family: DotGothic16;
@@ -83,6 +126,10 @@ line-height: 120px; /* 100% */
 letter-spacing: -2.4px;
 }
 
+.view-device {
+    text-align: center;
+}
+
 .p-container {
     display: flex;
     flex-direction: column;
@@ -99,7 +146,7 @@ letter-spacing: -2.4px;
 }
 
 .content-container {
- width: 648px;
+ width: 600px;
 }
 
 .footer-container {
